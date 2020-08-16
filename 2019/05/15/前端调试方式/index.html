@@ -221,17 +221,16 @@
 <p>1.安卓手机需要开启usb调试连接pc（具体在“手机设置-开发者选项”中开启）<br>2.电脑打开 Chrome 浏览器，在地址栏输入：chrome://inspect/#devices 并勾选 Discover USB devices 选项<br>3.电脑点击 inspect 按钮</p>
 <p><img src="https://s1.ax1x.com/2020/08/16/dEkUBR.png" srcset="/img/loading.gif"><br><img src="https://s1.ax1x.com/2020/08/16/dEkaH1.png" srcset="/img/loading.gif"></p>
 <p>图一  是浏览器打开页面<br>图二  是记录是手机助手里的webview。（应用里的webview）</p>
-<p>##weinre </p>
-<p>官网介绍<br><img src="https://s1.ax1x.com/2020/08/16/dEFcT0.png" srcset="/img/loading.gif"><br>在你本地创建一个监听服务器，并提供一个JS脚本，需要在需要测试的页面中加载这段 JS，就可以被 Weinre 监听到，在 Inspect 面板中调试你这个页面。</p>
+<h2 id="weinre"><a href="#weinre" class="headerlink" title="weinre"></a>weinre</h2><p>官网介绍<br><img src="https://s1.ax1x.com/2020/08/16/dEFcT0.png" srcset="/img/loading.gif"><br>在你本地创建一个监听服务器，并提供一个JS脚本，需要在需要测试的页面中加载这段 JS，就可以被 Weinre 监听到，在 Inspect 面板中调试你这个页面。</p>
 <ol>
 <li>需要先安装node（安装完后自动安装npm）<br>安装 weinre npm install -g weinre  </li>
 <li>开启 weinre weinre –httpPort 8888 –boundHost IP地址</li>
 <li>浏览器打开 localhost:8888 :</li>
 </ol>
 <p>在你所要调试的页面底部添加下面的脚本<br><code> &lt;script src=&quot;http://loaclhost:8888/target/target/target-script-min.hs#anonymous&quot;&gt;&lt;/script&gt;</code><br>然后移动端浏览器打开 localhost:8888<br>利用手机打开所要调试的页面（也就是刚才添加了script的那个页面，注意要在pc上开启服务器，然后手机通过输入对应地址来访问页面）<br>点击调试页面里对应的Targets，然后点击Elements工具，就可以进行调试了。</p>
-<p>#####Weinre还提供了下面的启动参数:<br>–help : 显示Weinre的Help<br>–httpPort  [portNumber] : 设置Weinre使用的端口号， 默认是8080<br>–boundHost  [hostname| ip address | -all-] : 默认是’localhost’， 这个参数是为了限制可以访问Weinre Server的设备， 设置为-all-或者指定ip， 那么任何设备都可以访问Weinre Server。<br>–verbose  [true | false] : 如果想看到更多的关于Weinre运行情况的输出， 那么可以设置这个选项为true， 默认为false；<br>–debug  [true | false] : 这个选项与–verbose类似， 会输出更多的信息。默认为false。<br>–readTimeout  [seconds] : Server发送信息到Target/Client的超时时间， 默认为5s。<br>–deathTimeout  [seconds] : 默认为3倍的readTimeout， 如果页面超过这个时间都没有任何响应， 那么就会断开连接。</p>
-<h3 id="Fiddler-调试-（适用安卓和iphone）"><a href="#Fiddler-调试-（适用安卓和iphone）" class="headerlink" title="Fiddler  调试 （适用安卓和iphone）"></a>Fiddler  调试 （适用安卓和iphone）</h3><p>下载 FIddler4   </p>
-<h4 id="状态图标"><a href="#状态图标" class="headerlink" title="状态图标"></a>状态图标</h4><p><img src="https://s1.ax1x.com/2020/08/16/dEFymn.png" srcset="/img/loading.gif"></p>
+<h4 id="Weinre还提供了下面的启动参数"><a href="#Weinre还提供了下面的启动参数" class="headerlink" title="Weinre还提供了下面的启动参数:"></a>Weinre还提供了下面的启动参数:</h4><p>–help : 显示Weinre的Help<br>–httpPort  [portNumber] : 设置Weinre使用的端口号， 默认是8080<br>–boundHost  [hostname| ip address | -all-] : 默认是’localhost’， 这个参数是为了限制可以访问Weinre Server的设备， 设置为-all-或者指定ip， 那么任何设备都可以访问Weinre Server。<br>–verbose  [true | false] : 如果想看到更多的关于Weinre运行情况的输出， 那么可以设置这个选项为true， 默认为false；<br>–debug  [true | false] : 这个选项与–verbose类似， 会输出更多的信息。默认为false。<br>–readTimeout  [seconds] : Server发送信息到Target/Client的超时时间， 默认为5s。<br>–deathTimeout  [seconds] : 默认为3倍的readTimeout， 如果页面超过这个时间都没有任何响应， 那么就会断开连接。</p>
+<h2 id="Fiddler"><a href="#Fiddler" class="headerlink" title="Fiddler"></a>Fiddler</h2><p>调试 （适用安卓和iphone）下载 FIddler4   </p>
+<h5 id="状态图标"><a href="#状态图标" class="headerlink" title="状态图标"></a>状态图标</h5><p><img src="https://s1.ax1x.com/2020/08/16/dEFymn.png" srcset="/img/loading.gif"></p>
 <p>在工具栏选择Tools-&gt; Fiddler Option -&gt; Connections<br>设置端口8888和勾选Allow remote computers to connect 、 Reuse client connections 、 Reuse server connections<br>如果是HTTPS请求就要选择允许https连接<br><img src="https://s1.ax1x.com/2020/08/16/dEF2kV.png" srcset="/img/loading.gif"> </p>
 <p>注意：手机和pc要在同一局域网下，打开手机wifi-&gt;代理设置-&gt; 主机IP 端口8888 </p>
 <p>界面左侧是请求文件，<br>右键选择你想浏览的文件 选择save-&gt; Response -&gt; Respones Body… 就可以保存到本地 </p>
@@ -244,7 +243,8 @@
 <h3 id="导出证书"><a href="#导出证书" class="headerlink" title="导出证书"></a>导出证书</h3><p>在第2步的对话框中，点击右侧的【Actions】,选择【Export Root Certificate to Desktop】,把证书导出到桌面，点击【ok】<br><img src="https://s1.ax1x.com/2020/08/16/dEGrwV.png" srcset="/img/loading.gif"></p>
 <h3 id="PC端安装证书"><a href="#PC端安装证书" class="headerlink" title="PC端安装证书"></a>PC端安装证书</h3><p>在桌面上找到第3步导出的证书FiddlerRoot.cer，双击证书，按照提示安装即可</p>
 <h3 id="移动端安装证书"><a href="#移动端安装证书" class="headerlink" title="移动端安装证书"></a>移动端安装证书</h3><p>移动端设置代理后，浏览器打开输入 主机IP:8888 ，点击页面中的“FiddlerRootcertificate”链接，在弹出的对话框中随便设置一个名称确定即可。    </p>
-<p>参考地址：<br><a target="_blank" rel="noopener" href="https://github.com/riskers/blog/issues/11">https://github.com/riskers/blog/issues/11</a><br><a target="_blank" rel="noopener" href="http://people.apache.org/~pmuellr/weinre/docs/latest/Running.html">http://people.apache.org/~pmuellr/weinre/docs/latest/Running.html</a><br><a target="_blank" rel="noopener" href="http://blog.csdn.net/freshlover/article/details/42640253">http://blog.csdn.net/freshlover/article/details/42640253</a><br><a target="_blank" rel="noopener" href="http://blog.csdn.net/idlear/article/details/50999490">http://blog.csdn.net/idlear/article/details/50999490</a></p>
+<h2 id="whistle"><a href="#whistle" class="headerlink" title="whistle"></a>whistle</h2><p>基于Node实现的跨平台web调试代理工具<br>文档链接 <a target="_blank" rel="noopener" href="https://wproxy.org/whistle/">https://wproxy.org/whistle/</a></p>
+<h2 id="Charles"><a href="#Charles" class="headerlink" title="Charles"></a>Charles</h2><p>参考地址：<br><a target="_blank" rel="noopener" href="https://github.com/riskers/blog/issues/11">https://github.com/riskers/blog/issues/11</a><br><a target="_blank" rel="noopener" href="http://people.apache.org/~pmuellr/weinre/docs/latest/Running.html">http://people.apache.org/~pmuellr/weinre/docs/latest/Running.html</a><br><a target="_blank" rel="noopener" href="http://blog.csdn.net/freshlover/article/details/42640253">http://blog.csdn.net/freshlover/article/details/42640253</a><br><a target="_blank" rel="noopener" href="http://blog.csdn.net/idlear/article/details/50999490">http://blog.csdn.net/idlear/article/details/50999490</a></p>
 
             </div>
             <hr>
