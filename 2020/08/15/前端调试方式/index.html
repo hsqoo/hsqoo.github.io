@@ -57,7 +57,7 @@
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
-       href="/">&nbsp;<strong>blog</strong>&nbsp;</a>
+       href="/">&nbsp;<strong>Blog</strong>&nbsp;</a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -228,14 +228,13 @@
 <li>开启 weinre weinre –httpPort 8888 –boundHost IP地址</li>
 <li>浏览器打开 localhost:8888 :</li>
 </ol>
-<p><img src="https://camo.githubusercontent.com/3a28b3626c558d22232c79947e2979b7752d363e/687474703a2f2f37786c6332612e636f6d312e7a302e676c622e636c6f7564646e2e636f6d2f31352d31312d352f31313232303038362e6a7067" srcset="/img/loading.gif"></p>
 <p>在你所要调试的页面底部添加下面的脚本<br><code> &lt;script src=&quot;http://loaclhost:8888/target/target/target-script-min.hs#anonymous&quot;&gt;&lt;/script&gt;</code><br>然后移动端浏览器打开 localhost:8888<br>利用手机打开所要调试的页面（也就是刚才添加了script的那个页面，注意要在pc上开启服务器，然后手机通过输入对应地址来访问页面）<br>点击调试页面里对应的Targets，然后点击Elements工具，就可以进行调试了。</p>
 <p>#####Weinre还提供了下面的启动参数:<br>–help : 显示Weinre的Help<br>–httpPort  [portNumber] : 设置Weinre使用的端口号， 默认是8080<br>–boundHost  [hostname| ip address | -all-] : 默认是’localhost’， 这个参数是为了限制可以访问Weinre Server的设备， 设置为-all-或者指定ip， 那么任何设备都可以访问Weinre Server。<br>–verbose  [true | false] : 如果想看到更多的关于Weinre运行情况的输出， 那么可以设置这个选项为true， 默认为false；<br>–debug  [true | false] : 这个选项与–verbose类似， 会输出更多的信息。默认为false。<br>–readTimeout  [seconds] : Server发送信息到Target/Client的超时时间， 默认为5s。<br>–deathTimeout  [seconds] : 默认为3倍的readTimeout， 如果页面超过这个时间都没有任何响应， 那么就会断开连接。</p>
-<p>##Fiddler  调试 （适用安卓和iphone）</p>
-<p>下载 FIddler4   </p>
+<h3 id="Fiddler-调试-（适用安卓和iphone）"><a href="#Fiddler-调试-（适用安卓和iphone）" class="headerlink" title="Fiddler  调试 （适用安卓和iphone）"></a>Fiddler  调试 （适用安卓和iphone）</h3><p>下载 FIddler4   </p>
 <h4 id="状态图标"><a href="#状态图标" class="headerlink" title="状态图标"></a>状态图标</h4><p><img src="https://s1.ax1x.com/2020/08/16/dEFymn.png" srcset="/img/loading.gif"></p>
 <p>在工具栏选择Tools-&gt; Fiddler Option -&gt; Connections<br>设置端口8888和勾选Allow remote computers to connect 、 Reuse client connections 、 Reuse server connections<br>如果是HTTPS请求就要选择允许https连接<br><img src="https://s1.ax1x.com/2020/08/16/dEF2kV.png" srcset="/img/loading.gif"> </p>
-<h4 id="注意：手机和pc要在同一局域网下，打开手机wifi-gt-代理设置-gt-主机IP-端口8888"><a href="#注意：手机和pc要在同一局域网下，打开手机wifi-gt-代理设置-gt-主机IP-端口8888" class="headerlink" title="注意：手机和pc要在同一局域网下，打开手机wifi-&gt;代理设置-&gt; 主机IP 端口8888"></a>注意：手机和pc要在同一局域网下，打开手机wifi-&gt;代理设置-&gt; 主机IP 端口8888</h4><p>界面左侧是请求文件，<br>右键选择你想浏览的文件 选择save-&gt; Response -&gt; Respones Body… 就可以保存到本地 </p>
+<p>注意：手机和pc要在同一局域网下，打开手机wifi-&gt;代理设置-&gt; 主机IP 端口8888 </p>
+<p>界面左侧是请求文件，<br>右键选择你想浏览的文件 选择save-&gt; Response -&gt; Respones Body… 就可以保存到本地 </p>
 <p>界面右侧是工具  </p>
 <ol>
 <li>Statistic:关于HTTP请求的性能和其他数据分析;  </li>
@@ -254,8 +253,6 @@
                 
                 
               </div>
-              
-                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
               
               
                 <div class="post-prevnext row">
