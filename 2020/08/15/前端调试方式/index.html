@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-
-  
-  <title>前端调试方式 | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1、iOS运行环境要求Mac + Safari 浏览器iPhone（iOS 6 +） + Safari 浏览器 调试步骤1.使用数据线将 iPhone 与 Mac 相连2.iPhone 开启 Web 检查器（设置 -&gt; Safari -&gt; 高级 -&gt; 开启 Web 检查器）3.iPhone 使用 Safari 浏览器打开要调试的页面4.Mac 打开 Safari 浏览器调试（菜单">
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.1.1" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.1.1" type="image/png" sizes="32x32"><meta name="description" content="1、iOS       运行环境要求Mac + Safari 浏览器iPhone（iOS 6 +） + Safari 浏览器 调试步骤1.使用数据线将 iPhone 与 Mac 相连2.iPhone 开启 Web 检查器（设置 -&gt; Safari -&gt; 高级 -&gt; 开启 Web 检查器）3.iPhone 使用 Safari 浏览器打开要调">
 <meta property="og:type" content="article">
 <meta property="og:title" content="前端调试方式">
 <meta property="og:url" content="http://yoursite.com/2020/08/15/%E5%89%8D%E7%AB%AF%E8%B0%83%E8%AF%95%E6%96%B9%E5%BC%8F/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1、iOS运行环境要求Mac + Safari 浏览器iPhone（iOS 6 +） + Safari 浏览器 调试步骤1.使用数据线将 iPhone 与 Mac 相连2.iPhone 开启 Web 检查器（设置 -&gt; Safari -&gt; 高级 -&gt; 开启 Web 检查器）3.iPhone 使用 Safari 浏览器打开要调试的页面4.Mac 打开 Safari 浏览器调试（菜单">
+<meta property="og:site_name" content="hsqoo">
+<meta property="og:description" content="1、iOS       运行环境要求Mac + Safari 浏览器iPhone（iOS 6 +） + Safari 浏览器 调试步骤1.使用数据线将 iPhone 与 Mac 相连2.iPhone 开启 Web 检查器（设置 -&gt; Safari -&gt; 高级 -&gt; 开启 Web 检查器）3.iPhone 使用 Safari 浏览器打开要调">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://s1.ax1x.com/2020/08/16/dEAlqA.jpg">
 <meta property="og:image" content="https://s1.ax1x.com/2020/08/16/dEkUBR.png">
@@ -24,83 +15,42 @@
 <meta property="og:image" content="https://s1.ax1x.com/2020/08/16/dEFRYT.png">
 <meta property="og:image" content="https://s1.ax1x.com/2020/08/16/dEGrwV.png">
 <meta property="article:published_time" content="2020-08-15T15:52:16.000Z">
-<meta property="article:modified_time" content="2020-08-16T08:06:49.283Z">
+<meta property="article:modified_time" content="2020-08-16T09:55:46.783Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s1.ax1x.com/2020/08/16/dEAlqA.jpg">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+<meta name="twitter:image" content="https://s1.ax1x.com/2020/08/16/dEAlqA.jpg"><title>前端调试方式 | hsqoo</title><link ref="canonical" href="http://yoursite.com/2020/08/15/%E5%89%8D%E7%AB%AF%E8%B0%83%E8%AF%95%E6%96%B9%E5%BC%8F/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.1.1"><script>var Stun = window.Stun || {};
+var CONFIG = {
+  root: '/',
+  algolia: undefined,
+  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
+  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
+  header: {"enable":true,"showOnPost":true,"scrollDownIcon":false},
+  postWidget: {"endText":true},
+  nightMode: {"enable":true},
+  back2top: {"enable":true},
+  codeblock: {"style":"default","highlight":"light","wordWrap":false},
+  reward: false,
+  fancybox: false,
+  zoomImage: {"gapAside":"20px"},
+  galleryWaterfall: undefined,
+  lazyload: false,
+  pjax: undefined,
+  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
+  shortcuts: undefined,
+  prompt: {"copyButton":"Copy","copySuccess":"Copy Success","copyError":"Copy Error"},
+  sourcePath: {"js":"js","css":"css","images":"images"},
+};
 
-<meta name="generator" content="Hexo 5.0.2"></head>
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.0.2"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">Home</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">Archives</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">hsqoo</div><div class="header-banner-info__subtitle"></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">前端调试方式</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2020-08-15</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2020-08-16</span></span></div></header><div class="post-body"><a id="more"></a>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-前端调试方式" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/08/15/%E5%89%8D%E7%AB%AF%E8%B0%83%E8%AF%95%E6%96%B9%E5%BC%8F/" class="article-date">
-  <time datetime="2020-08-15T15:52:16.000Z" itemprop="datePublished">2020-08-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      前端调试方式
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="1、iOS"><a href="#1、iOS" class="headerlink" title="1、iOS"></a>1、iOS</h2><p><strong>运行环境要求</strong><br>Mac + Safari 浏览器<br>iPhone（iOS 6 +） + Safari 浏览器</p>
+        <h2 id="1、iOS"   >
+          <a href="#1、iOS" class="heading-link"><i class="fas fa-link"></i></a>1、iOS</h2>
+      <p><strong>运行环境要求</strong><br>Mac + Safari 浏览器<br>iPhone（iOS 6 +） + Safari 浏览器</p>
 <p><strong>调试步骤</strong><br>1.使用数据线将 iPhone 与 Mac 相连<br>2.iPhone 开启 Web 检查器（设置 -&gt; Safari -&gt; 高级 -&gt; 开启 Web 检查器）<br>3.iPhone 使用 Safari 浏览器打开要调试的页面<br>4.Mac 打开 Safari 浏览器调试（菜单栏 —&gt; 开发 -&gt; iPhone 设备名 -&gt; 选择调试页面）<br>(注：如果你的菜单栏没有“开发”选项，可以到左上角 Safari -&gt; 偏好设置 -&gt; 高级 -&gt; 在菜单栏中显示“开发”菜单。)<br>5、在弹出的 Safari Developer Tools 中调试<br><img src="https://s1.ax1x.com/2020/08/16/dEAlqA.jpg"></p>
-<h2 id="2、Android"><a href="#2、Android" class="headerlink" title="2、Android"></a>2、Android</h2><p><strong>运行环境要求</strong><br>Chrome 版本 &gt;= 32<br>Android 版本 4.0 +</p>
+
+        <h2 id="2、Android"   >
+          <a href="#2、Android" class="heading-link"><i class="fas fa-link"></i></a>2、Android</h2>
+      <p><strong>运行环境要求</strong><br>Chrome 版本 &gt;= 32<br>Android 版本 4.0 +</p>
 <p>1.安卓手机需要开启usb调试连接pc（具体在“手机设置-开发者选项”中开启）<br>2.电脑打开 Chrome 浏览器，在地址栏输入：chrome://inspect/#devices 并勾选 Discover USB devices 选项<br>3.电脑点击 inspect 按钮</p>
 <p><img src="https://s1.ax1x.com/2020/08/16/dEkUBR.png"><br><img src="https://s1.ax1x.com/2020/08/16/dEkaH1.png"></p>
 <p>图一  是浏览器打开页面<br>图二  是记录是手机助手里的webview。（应用里的webview）</p>
@@ -116,123 +66,39 @@
 <p>#####Weinre还提供了下面的启动参数:<br>–help : 显示Weinre的Help<br>–httpPort  [portNumber] : 设置Weinre使用的端口号， 默认是8080<br>–boundHost  [hostname| ip address | -all-] : 默认是’localhost’， 这个参数是为了限制可以访问Weinre Server的设备， 设置为-all-或者指定ip， 那么任何设备都可以访问Weinre Server。<br>–verbose  [true | false] : 如果想看到更多的关于Weinre运行情况的输出， 那么可以设置这个选项为true， 默认为false；<br>–debug  [true | false] : 这个选项与–verbose类似， 会输出更多的信息。默认为false。<br>–readTimeout  [seconds] : Server发送信息到Target/Client的超时时间， 默认为5s。<br>–deathTimeout  [seconds] : 默认为3倍的readTimeout， 如果页面超过这个时间都没有任何响应， 那么就会断开连接。</p>
 <p>##Fiddler  调试 （适用安卓和iphone）</p>
 <p>下载 FIddler4   </p>
-<h4 id="状态图标"><a href="#状态图标" class="headerlink" title="状态图标"></a>状态图标</h4><p><img src="https://s1.ax1x.com/2020/08/16/dEFymn.png"></p>
+
+        <h4 id="状态图标"   >
+          <a href="#状态图标" class="heading-link"><i class="fas fa-link"></i></a>状态图标</h4>
+      <p><img src="https://s1.ax1x.com/2020/08/16/dEFymn.png"></p>
 <p>在工具栏选择Tools-&gt; Fiddler Option -&gt; Connections<br>设置端口8888和勾选Allow remote computers to connect 、 Reuse client connections 、 Reuse server connections<br>如果是HTTPS请求就要选择允许https连接<br><img src="https://s1.ax1x.com/2020/08/16/dEF2kV.png"> </p>
-<h4 id="注意：手机和pc要在同一局域网下，打开手机wifi-gt-代理设置-gt-主机IP-端口8888"><a href="#注意：手机和pc要在同一局域网下，打开手机wifi-gt-代理设置-gt-主机IP-端口8888" class="headerlink" title="注意：手机和pc要在同一局域网下，打开手机wifi-&gt;代理设置-&gt; 主机IP 端口8888"></a>注意：手机和pc要在同一局域网下，打开手机wifi-&gt;代理设置-&gt; 主机IP 端口8888</h4><p>界面左侧是请求文件，<br>右键选择你想浏览的文件 选择save-&gt; Response -&gt; Respones Body… 就可以保存到本地 </p>
+
+        <h4 id="注意：手机和pc要在同一局域网下，打开手机wifi-gt-代理设置-gt-主机IP-端口8888"   >
+          <a href="#注意：手机和pc要在同一局域网下，打开手机wifi-gt-代理设置-gt-主机IP-端口8888" class="heading-link"><i class="fas fa-link"></i></a>注意：手机和pc要在同一局域网下，打开手机wifi-&gt;代理设置-&gt; 主机IP 端口8888</h4>
+      <p>界面左侧是请求文件，<br>右键选择你想浏览的文件 选择save-&gt; Response -&gt; Respones Body… 就可以保存到本地 </p>
 <p>界面右侧是工具  </p>
 <ol>
 <li>Statistic:关于HTTP请求的性能和其他数据分析;  </li>
 <li>Inspectors: 提供headers、textview、hexview,Raw等多种方式查看单条http请求的请求报文的信息  </li>
 <li>AutoResponder标签设置:选择Enable automatic reaponses 和Unmatched requests passthrough<br>选择AutoResponder 可将界面左侧的文件拖动到这里<br>在下面的Rule Editor 下面选择 Find a file… 选择本地保存的图片. 最后点击Save 保存下,即可替换成本地文件。<br><img src="https://s1.ax1x.com/2020/08/16/dEFRYT.png"></li>
 </ol>
-<h3 id="导出证书"><a href="#导出证书" class="headerlink" title="导出证书"></a>导出证书</h3><p>在第2步的对话框中，点击右侧的【Actions】,选择【Export Root Certificate to Desktop】,把证书导出到桌面，点击【ok】<br><img src="https://s1.ax1x.com/2020/08/16/dEGrwV.png"></p>
-<h3 id="PC端安装证书"><a href="#PC端安装证书" class="headerlink" title="PC端安装证书"></a>PC端安装证书</h3><p>在桌面上找到第3步导出的证书FiddlerRoot.cer，双击证书，按照提示安装即可</p>
-<h3 id="移动端安装证书"><a href="#移动端安装证书" class="headerlink" title="移动端安装证书"></a>移动端安装证书</h3><p>移动端设置代理后，浏览器打开输入 主机IP:8888 ，点击页面中的“FiddlerRootcertificate”链接，在弹出的对话框中随便设置一个名称确定即可。    </p>
-<p>参考地址：<br><a target="_blank" rel="noopener" href="https://github.com/riskers/blog/issues/11">https://github.com/riskers/blog/issues/11</a><br><a target="_blank" rel="noopener" href="http://people.apache.org/~pmuellr/weinre/docs/latest/Running.html">http://people.apache.org/~pmuellr/weinre/docs/latest/Running.html</a><br><a target="_blank" rel="noopener" href="http://blog.csdn.net/freshlover/article/details/42640253">http://blog.csdn.net/freshlover/article/details/42640253</a><br><a target="_blank" rel="noopener" href="http://blog.csdn.net/idlear/article/details/50999490">http://blog.csdn.net/idlear/article/details/50999490</a></p>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/08/15/%E5%89%8D%E7%AB%AF%E8%B0%83%E8%AF%95%E6%96%B9%E5%BC%8F/" data-id="ckdwtln1d0001psw3d33ge4i6" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-  
-    <a href="/2020/08/15/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
-    </a>
-  
-</nav>
+        <h3 id="导出证书"   >
+          <a href="#导出证书" class="heading-link"><i class="fas fa-link"></i></a>导出证书</h3>
+      <p>在第2步的对话框中，点击右侧的【Actions】,选择【Export Root Certificate to Desktop】,把证书导出到桌面，点击【ok】<br><img src="https://s1.ax1x.com/2020/08/16/dEGrwV.png"></p>
 
-  
-</article>
+        <h3 id="PC端安装证书"   >
+          <a href="#PC端安装证书" class="heading-link"><i class="fas fa-link"></i></a>PC端安装证书</h3>
+      <p>在桌面上找到第3步导出的证书FiddlerRoot.cer，双击证书，按照提示安装即可</p>
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2020/08/15/%E5%89%8D%E7%AB%AF%E8%B0%83%E8%AF%95%E6%96%B9%E5%BC%8F/">前端调试方式</a>
-          </li>
-        
-          <li>
-            <a href="/2020/08/15/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-  </div>
-</body>
-</html>
+        <h3 id="移动端安装证书"   >
+          <a href="#移动端安装证书" class="heading-link"><i class="fas fa-link"></i></a>移动端安装证书</h3>
+      <p>移动端设置代理后，浏览器打开输入 主机IP:8888 ，点击页面中的“FiddlerRootcertificate”链接，在弹出的对话框中随便设置一个名称确定即可。    </p>
+<p>参考地址：<br><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://github.com/riskers/blog/issues/11" >https://github.com/riskers/blog/issues/11</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="http://people.apache.org/~pmuellr/weinre/docs/latest/Running.html" >http://people.apache.org/~pmuellr/weinre/docs/latest/Running.html</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="http://blog.csdn.net/freshlover/article/details/42640253" >http://blog.csdn.net/freshlover/article/details/42640253</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="http://blog.csdn.net/idlear/article/details/50999490" >http://blog.csdn.net/idlear/article/details/50999490</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+<!-- more --></div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ END ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">Author: </span><span class="copyright-author__value"><a href="http://yoursite.com">John Doe</a></span></div><div class="copyright-link"><span class="copyright-link__name">Link: </span><span class="copyright-link__value"><a href="http://yoursite.com/2020/08/15/%E5%89%8D%E7%AB%AF%E8%B0%83%E8%AF%95%E6%96%B9%E5%BC%8F/">http://yoursite.com/2020/08/15/%E5%89%8D%E7%AB%AF%E8%B0%83%E8%AF%95%E6%96%B9%E5%BC%8F/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">Copyright: </span><span class="copyright-notice__value">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> unless stating additionally</span></div></div><nav class="post-paginator paginator"><div class="paginator-next"><a class="paginator-next__link" href="/2020/08/15/hello-world/"><span class="paginator-prev__text">Hello World</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">Catalog</span><span class="sidebar-nav-ov">Overview</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81iOS"><span class="toc-number">1.</span> <span class="toc-text">
+          1、iOS</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81Android"><span class="toc-number">2.</span> <span class="toc-text">
+          2、Android</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%8A%B6%E6%80%81%E5%9B%BE%E6%A0%87"><span class="toc-number">2.0.1.</span> <span class="toc-text">
+          状态图标</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F%EF%BC%9A%E6%89%8B%E6%9C%BA%E5%92%8Cpc%E8%A6%81%E5%9C%A8%E5%90%8C%E4%B8%80%E5%B1%80%E5%9F%9F%E7%BD%91%E4%B8%8B%EF%BC%8C%E6%89%93%E5%BC%80%E6%89%8B%E6%9C%BAwifi-gt-%E4%BB%A3%E7%90%86%E8%AE%BE%E7%BD%AE-gt-%E4%B8%BB%E6%9C%BAIP-%E7%AB%AF%E5%8F%A38888"><span class="toc-number">2.0.2.</span> <span class="toc-text">
+          注意：手机和pc要在同一局域网下，打开手机wifi-&gt;代理设置-&gt; 主机IP 端口8888</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%BC%E5%87%BA%E8%AF%81%E4%B9%A6"><span class="toc-number">2.1.</span> <span class="toc-text">
+          导出证书</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#PC%E7%AB%AF%E5%AE%89%E8%A3%85%E8%AF%81%E4%B9%A6"><span class="toc-number">2.2.</span> <span class="toc-text">
+          PC端安装证书</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%AE%89%E8%A3%85%E8%AF%81%E4%B9%A6"><span class="toc-number">2.3.</span> <span class="toc-text">
+          移动端安装证书</span></a></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/stun-logo.svg" alt="avatar"></div><p class="sidebar-ov-author__text">hello world</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">2</div><div class="sidebar-ov-state-item__name">Archives</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="Creative Commons" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">You have read </span><span class="sidebar-reading-info__num">0</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2020</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>John Doe</span></div><div><span>Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a></span><span> v5.0.2</span><span class="footer__devider">|</span><span>Theme - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.1.1</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="/js/utils.js?v=2.1.1"></script><script src="/js/stun-boot.js?v=2.1.1"></script><script src="/js/scroll.js?v=2.1.1"></script><script src="/js/header.js?v=2.1.1"></script><script src="/js/sidebar.js?v=2.1.1"></script></body></html>
