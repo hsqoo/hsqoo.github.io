@@ -171,7 +171,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.1k 字
+      1.2k 字
     </span>
   
 
@@ -181,7 +181,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      13
+      14
        分钟
     </span>
   
@@ -221,6 +221,17 @@
 <p>1.安卓手机需要开启usb调试连接pc（具体在“手机设置-开发者选项”中开启）<br>2.电脑打开 Chrome 浏览器，在地址栏输入：chrome://inspect/#devices 并勾选 Discover USB devices 选项<br>3.电脑点击 inspect 按钮</p>
 <p><img src="https://s1.ax1x.com/2020/08/16/dEkUBR.png" srcset="/img/loading.gif"><br><img src="https://s1.ax1x.com/2020/08/16/dEkaH1.png" srcset="/img/loading.gif"></p>
 <p>图一  是浏览器打开页面<br>图二  是记录是手机助手里的webview。（应用里的webview）</p>
+<h2 id="vConsole"><a href="#vConsole" class="headerlink" title="vConsole"></a>vConsole</h2><p>npm安装</p>
+<pre><code class="hljs cmake">npm <span class="hljs-keyword">install</span> vconsole</code></pre>
+
+<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;path/to/vconsole.min.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span>
+<span class="javascript">  <span class="hljs-comment">// init vConsole</span></span>
+<span class="javascript">  <span class="hljs-keyword">var</span> vConsole = <span class="hljs-keyword">new</span> VConsole();</span>
+<span class="javascript">  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#x27;Hello world&#x27;</span>);</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://github.com/Tencent/vConsole">vConsole</a>一个轻量、可拓展、针对手机网页的前端开发者调试面板。<br><img src="https://github.com/Tencent/vConsole/raw/dev/example/snapshot/log_panel.png" srcset="/img/loading.gif"></p>
 <h2 id="weinre"><a href="#weinre" class="headerlink" title="weinre"></a>weinre</h2><p><img src="https://s1.ax1x.com/2020/08/16/dEFcT0.png" srcset="/img/loading.gif"><br>在你本地创建一个监听服务器，并提供一个JS脚本，需要在需要测试的页面中加载这段 JS，就可以被 Weinre 监听到，在 Inspect 面板中调试你这个页面。</p>
 <ol>
 <li>需要先安装node（安装完后自动安装npm）<br>安装 weinre npm install -g weinre  </li>

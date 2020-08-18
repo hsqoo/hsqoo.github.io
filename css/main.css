@@ -832,7 +832,7 @@ img[srcset] {
   overflow: visible;
 }
 .markdown-body pre code {
-  font-size: 85%;
+  font-size: 100%;
   display: block;
   overflow-x: auto;
   padding: 0.5rem 0;
