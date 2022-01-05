@@ -3,6 +3,7 @@
 // @description  订阅自动打开网页
 // @version      0.2.0
 // @author       You
+// @grant        GM_openInTab
 // @connect      hsqoo.github.io
 // @scriptUrl    https:/hsqoo.github.io/1.user.js
 // ==/UserSubscribe==
