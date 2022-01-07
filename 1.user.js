@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         定时打开网页
 // @description  订阅自动打开网页
-// @version      0.2.0
+// @version      0.4.0
 // @author       You
 // @grant        GM_openInTab
 // @connect      hsqoo.github.io
@@ -9,7 +9,7 @@
 // @updateURL    https:/hsqoo.github.io/1.user.js
 // @background
 // ==/UserScript==
-const endTime = 1641398400000;  // 设定时间戳  1月6号 github
+const endTime = 1641398400000;  // 设定时间戳  1月8号 最新一次
 const targetURL = 'https://taobao.com';
 let nowTime = '';  // 当前时间戳
 let timer = null;
