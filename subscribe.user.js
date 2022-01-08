@@ -1,7 +1,7 @@
 // ==UserSubscribe==
 // @name         订阅脚本
 // @description  订阅自动打开网页
-// @version      0.3.0
+// @version      0.4.0
 // @author       You
 // @grant        GM_openInTab
 // @connect      hsqoo.github.io
