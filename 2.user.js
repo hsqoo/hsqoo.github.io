@@ -12,6 +12,6 @@
 
 return new Promise((resolve, reject) => {
     
-    resolve('2022-01-10  第二个脚本 版本 0.2.0 *****');
+    resolve('2022-01-10  第二个脚本');
     // Your code here...
 });
