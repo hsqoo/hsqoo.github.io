@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         第二个脚本
 // @description  第二个脚本
-// @version      0.2.0
+// @version      0.3.0
 // @author       You
 // @grant        GM_openInTab
 // @background
@@ -12,6 +12,6 @@
 
 return new Promise((resolve, reject) => {
     
-    resolve('2022-01-10  第二个脚本');
+    resolve('2022-01-11  第二个脚本 0.3.0');
     // Your code here...
 });
